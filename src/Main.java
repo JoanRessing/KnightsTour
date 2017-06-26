@@ -60,12 +60,6 @@ public class Main {
 		return false;		
 	}
 	
-	private static void print10(int[] tour) {
-		for(int i=0; i<10; i++)
-			System.out.print(tour[i] + "\t");
-		System.out.println();
-	}
-
 	/**
 	 * Compute list of possible jump locations.
 	 * @param visited locations
