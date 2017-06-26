@@ -150,12 +150,19 @@ public class Main {
 			n++;
 		}
 
-		System.out.println("-----------------------------------------------------------------");
+		dashes();
 		for(int[] row: grid) {
 			System.out.print("|  ");
 			for(int pos: row)
 				System.out.print(pos + "\t|  ");
-			System.out.println("\n-----------------------------------------------------------------");
+			dashes();
 		}
+	}
+
+	private static void dashes() {
+		System.out.println();
+		for(int i=0; i<SIZE; i++)
+			System.out.print("--------");
+		System.out.println("-");
 	}
 }
